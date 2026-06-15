@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OllamaApplication {
+public class MultiModalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OllamaApplication.class, args);
+		SpringApplication.run(MultiModalApplication.class, args);
 	}
 
 }

@@ -1,0 +1,78 @@
+<svg width="680" height="460" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <style>
+    .box { stroke-width: 1; rx: 8; }
+    .title { font-size: 14px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+    .subtitle { font-size: 12px; text-anchor: middle; dominant-baseline: central; fill: #555; }
+    .arr { stroke: #555; stroke-width: 1.5; fill: none; }
+  </style>
+
+  <!-- User -->
+  <g>
+    <rect class="box" x="270" y="20" width="140" height="44" rx="22" fill="#ECECEC" stroke="#999"/>
+    <text class="title" x="340" y="42" fill="#222">User / client</text>
+  </g>
+  <line x1="340" y1="64" x2="340" y2="104" class="arr" marker-end="url(#arrow)"/>
+
+  <!-- Controller -->
+  <g>
+    <rect class="box" x="250" y="104" width="180" height="56" fill="#F2EEFF" stroke="#7F77DD"/>
+    <text class="title" x="340" y="122" fill="#3C3489">MultiModelController</text>
+    <text class="subtitle" x="340" y="142" fill="#534AB7">Receives requests</text>
+  </g>
+  <line x1="340" y1="160" x2="340" y2="200" class="arr" marker-end="url(#arrow)"/>
+
+  <!-- ChatClient -->
+  <g>
+    <rect class="box" x="250" y="200" width="180" height="56" fill="#E1F5EE" stroke="#1D9E75"/>
+    <text class="title" x="340" y="218" fill="#085041">ChatClient</text>
+    <text class="subtitle" x="340" y="238" fill="#0F6E56">Routes AI requests</text>
+  </g>
+
+  <!-- Config -->
+  <g>
+    <rect class="box" x="40" y="200" width="160" height="56" fill="#FAECE7" stroke="#D85A30"/>
+    <text class="title" x="120" y="218" fill="#712B13">chatClientConfig</text>
+    <text class="subtitle" x="120" y="238" fill="#993C1D">Creates ChatClient</text>
+  </g>
+  <path d="M200 228 L248 228" class="arr" marker-end="url(#arrow)"/>
+
+  <!-- application.properties -->
+  <g>
+    <rect class="box" x="20" y="320" width="200" height="56" fill="#F1EFE8" stroke="#888780"/>
+    <text class="title" x="120" y="338" fill="#2C2C2A">application.properties</text>
+    <text class="subtitle" x="120" y="358" fill="#5F5E5A">API keys, model names</text>
+  </g>
+  <path d="M120 320 L120 256" class="arr" marker-end="url(#arrow)"/>
+
+  <!-- pom.xml -->
+  <g>
+    <rect class="box" x="460" y="320" width="200" height="56" fill="#F1EFE8" stroke="#888780"/>
+    <text class="title" x="560" y="338" fill="#2C2C2A">pom.xml</text>
+    <text class="subtitle" x="560" y="358" fill="#5F5E5A">Project dependencies</text>
+  </g>
+  <path d="M560 320 L560 256" class="arr" marker-end="url(#arrow)"/>
+
+  <!-- Ollama -->
+  <g>
+    <rect class="box" x="60" y="380" width="180" height="56" fill="#E6F1FB" stroke="#378ADD"/>
+    <text class="title" x="150" y="398" fill="#0C447C">Ollama</text>
+    <text class="subtitle" x="150" y="418" fill="#185FA5">Local model</text>
+  </g>
+
+  <!-- OpenAI -->
+  <g>
+    <rect class="box" x="440" y="380" width="180" height="56" fill="#E6F1FB" stroke="#378ADD"/>
+    <text class="title" x="530" y="398" fill="#0C447C">OpenAI</text>
+    <text class="subtitle" x="530" y="418" fill="#185FA5">Cloud model</text>
+  </g>
+
+  <!-- ChatClient to Ollama/OpenAI -->
+  <path d="M280 240 L150 240 L150 378" class="arr" marker-end="url(#arrow)"/>
+  <path d="M400 240 L530 240 L530 378" class="arr" marker-end="url(#arrow)"/>
+</svg>
