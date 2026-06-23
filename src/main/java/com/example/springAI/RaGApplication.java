@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MultiModalApplication {
+public class RaGApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MultiModalApplication.class, args);
+		SpringApplication.run(RaGApplication.class, args);
 	}
 
 }
