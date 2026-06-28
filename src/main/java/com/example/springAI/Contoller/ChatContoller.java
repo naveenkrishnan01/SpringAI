@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class chatContoller {
+public class ChatContoller {
 
     private final ChatClient chatClient;
 
-    public chatContoller(ChatClient.Builder chatClientBuilder) {
+    public ChatContoller(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
 
