@@ -116,11 +116,11 @@ class SpringAIApplicationTests {
 	}
 
 	@Test
-	@DisplayName("Should correctly evaluate factual response based on HR policy context (RAG scenario)")
+	@DisplayName("Should correctly evaluate factual response based on Pickleball context (RAG scenario)")
 	@Timeout(value = 30)
 	public void evaluateHrPolicyAnswerWithRagContext() throws IOException {
 		// Given
-		String question = "How many paid leaves do employees get annually?";
+		String question = "What is the size of the pickleball court?";
 
 		// When
 		String aiResponse = chatController.promptStuffing(question);
